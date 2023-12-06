@@ -40,5 +40,6 @@ jobs:
         run: sh make_html.sh target/biblio-0.1.jar
 
       - name : Publishing with ghpages
+        uses : peaceiris/actions-gh-pages@v3
         publish_dir: ./wwwroot
         publish_branch: ghpages
