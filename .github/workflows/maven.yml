@@ -36,5 +36,5 @@ jobs:
       - name: Build with Maven (without tests)
         run: mvn -B package -DskipTests --file pom.xml
 
-      - name: Run make_html.sh
-        run: sh make_html.sh
+      - name: Run make_html.sh from biblio directory
+        run: sh biblio/make_html.sh
